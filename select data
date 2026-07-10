@@ -1,0 +1,1 @@
+awk '{id=$3;rem=(id-1)%225;if(rem<80)print $0}' restart.ticras20.out > 3.out

@@ -1,0 +1,34 @@
+#!/bin/sh
+dir=`pwd`
+
+for i in `seq 30 30 90` 100
+
+do
+
+        cd $dir/$i/
+        for j in 3 8
+        do
+        cd s$j/T0/spin
+
+        cp coord.tbcro300-0T-5K-en1.vesta $dir/spin/coord.tbcro300-0T-5K-ens$j-$i.vesta
+#       gfortran getvector.f90
+#       ./a.out
+#       rm coord.tbcro300-0T-5K*
+#       rm m1-isert.sh
+#       for m in `seq 2 1 10`
+#        do
+#               rm coord.tbcro300$m.vesta
+#       done
+#       bash m1-insert.sh
+#       bash m2-insert.sh
+#        cp -rf $dir/spin $i/s$j/T0
+#       cp restart.tbcro300.out spin
+#       cp $dir/$i/s$j/T0/restart.tbcro300.out spin
+#       tail -5 totenergy.tbcro300.out | awk '{s1+=$1;s2+=$2;s3+=$3;s4+=$4;s5+=$5;s10+=$10;n++}
+#        END{printf "%.10g %.10g %.10g %.10g %.10g %.10g\n",
+#       s1/n, s2/n, s3/n, s4/n, s5/n,s10/n}' > energy$i-$j.dat
+#       cp energy$i-$j.dat ../../../
+        cd ../../../
+        done
+
+done

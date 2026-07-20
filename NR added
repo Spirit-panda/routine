@@ -1,0 +1,2 @@
+#add NR for the file
+awk '{$1=NR; print $0}' avg3.dat >a3.dat
